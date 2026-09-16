@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprovado Enem — Checklist Completo, Guia de Redação e Plano de 55 Dias</title>
+<meta name="description" content="Checklist completo com mais de 430 tópicos, guia de redação e plano de ataque de 55 dias pro Enem 2026. Organize seus estudos hoje mesmo, por menos de R$10.">
+<meta name="theme-color" content="#4c1d95">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vai fazer o Enem e não sabe por onde começar? Isso resolve.">
+<meta property="og:description" content="Checklist completo, guia de redação e plano de 55 dias pro Enem 2026. Tudo organizado pra você chegar preparado até novembro.">
+<!-- TROCAR: colar a URL da imagem de compartilhamento (1200x630px) -->
+<meta property="og:image" content="https://via.placeholder.com/1200x630/4c1d95/fbbf24?text=Aprovado+Enem">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --grad-1: #2b0f2e;
+    --grad-2: #4c1d95;
+    --grad-3: #db2777;
+    --gold-1: #fbbf24;
+    --gold-2: #fde047;
+    --text-light: #fdf4ff;
+    --text-muted: #d8b4e0;
+    --dark-bg: #1a0a1c;
+    --card-bg: rgba(255, 255, 255, 0.06);
+    --card-bg-hover: rgba(255, 255, 255, 0.1);
+    --card-border: rgba(255, 255, 255, 0.12);
+    --card-border-hover: rgba(251, 191, 36, 0.45);
+    --radius: 16px;
+    --max-width: 1100px;
+    --notch: 44px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  section { padding: 64px 0; position: relative; }
+
+  /* ---------- Ícones ---------- */
+  .icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(219, 39, 119, 0.16));
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    color: var(--gold-2);
+    flex-shrink: 0;
+  }
+  .icon-circle--md { width: 48px; height: 48px; }
+  .icon-circle--md .icon { width: 24px; height: 24px; }
+  .icon-circle--lg { width: 88px; height: 88px; }
+  .icon-circle--lg .icon { width: 40px; height: 40px; }
+
+  /* ---------- Blobs decorativos ---------- */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ---------- Botões ---------- */
+  .btn-cta {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+    color: #2b0f2e;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 18px 32px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(251, 191, 36, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    width: 100%;
+    max-width: 420px;
+  }
+  .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(251, 191, 36, 0.45); }
+  .btn-cta:active { transform: translateY(0); }
+  .btn-cta:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+  .btn-cta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.75), transparent);
+    transform: skewX(-20deg);
+    pointer-events: none;
+  }
+  .btn-cta.shine::after { animation: shine-sweep 0.75s ease forwards; }
+  @keyframes shine-sweep {
+    from { left: -75%; }
+    to { left: 130%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn-cta.shine::after { animation: none; }
+  }
+
+  .btn-wrap { display: flex; justify-content: center; margin-top: 28px; }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in-view { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; opacity: 1; transform: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(160deg, var(--grad-1) 0%, var(--grad-2) 55%, var(--grad-3) 100%);
+    padding: 56px 0 calc(48px + var(--notch));
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--notch)), 0 100%);
+  }
+  .blob-gold { width: 280px; height: 280px; top: -70px; left: -80px; background: radial-gradient(circle, rgba(251, 191, 36, 0.55), transparent 70%); }
+  .blob-pink { width: 340px; height: 340px; bottom: -100px; right: -100px; background: radial-gradient(circle, rgba(219, 39, 119, 0.5), transparent 70%); }
+
+  .hero .container { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .hero h1 {
+    font-size: clamp(1.7rem, 6vw, 2.6rem);
+    max-width: 720px;
+  }
+  .hero .subheadline {
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    color: var(--text-muted);
+    max-width: 560px;
+  }
+  .hero-media {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+    border: 1px solid var(--card-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  /*
+    TROCAR: substitua o <div class="hero-media"> abaixo por uma imagem ou vídeo real, ex:
+    <img src="sua-foto.jpg" alt="Descrição da foto" class="hero-media" style="object-fit:cover;">
+    ou um <video> com os materiais / pessoa estudando.
+  */
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--card-border);
+    padding: 7px 16px 7px 12px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--gold-2);
+    font-weight: 600;
+  }
+  .hero-badge .icon { width: 16px; height: 16px; }
+
+  /* ---------- Seções gerais ---------- */
+  .section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin: 14px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--gold-1), var(--gold-2));
+  }
+  .section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 560px;
+    margin: 20px auto 40px;
+    font-size: 1rem;
+  }
+
+  /* ---------- O que você vai receber ---------- */
+  .receber { background: #22092a; margin-top: calc(-1 * var(--notch)); padding-top: calc(64px + var(--notch) + 16px); position: relative; z-index: 2; }
+  .receber-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    .receber-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .item-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .item-card:hover {
+    transform: translateY(-6px);
+    background: var(--card-bg-hover);
+    border-color: var(--card-border-hover);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+  }
+  .item-card .step-number {
+    position: absolute;
+    top: -14px;
+    right: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 4.2rem;
+    color: rgba(255,255,255,0.05);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .item-card .icon-circle { margin-bottom: 16px; }
+  .item-card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-2); }
+  .item-card p { color: var(--text-muted); font-size: 0.95rem; position: relative; }
+
+  .entrega-nota {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .entrega-nota .icon { color: var(--gold-1); }
+
+  /* ---------- Por que escolher ---------- */
+  .beneficios { background: linear-gradient(180deg, #2b0f2e, #3a1240); }
+  .beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  @media (min-width: 640px) {
+    .beneficios-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .beneficio-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  }
+  .beneficio-item:hover {
+    transform: translateY(-4px);
+    background: var(--card-bg-hover);
+    border-color: var(--card-border-hover);
+  }
+  .beneficio-item p { font-size: 0.95rem; color: var(--text-light); padding-top: 4px; }
+  .beneficio-item strong { color: var(--gold-2); }
+
+  /* ---------- Bônus ---------- */
+  .bonus { background: #22092a; }
+  .bonus-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    .bonus-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .bonus-card {
+    background: linear-gradient(160deg, rgba(219,39,119,0.15), rgba(76,29,149,0.15));
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .bonus-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--card-border-hover);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+  }
+  .bonus-tag {
+    display: inline-block;
+    background: var(--gold-1);
+    color: #2b0f2e;
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .bonus-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .bonus-card p.desc { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px; }
+  .bonus-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--gold-2);
+    font-weight: 600;
+  }
+  .bonus-note .icon { width: 16px; height: 16px; color: var(--gold-1); }
+  .bonus-card.placeholder {
+    border: 2px dashed rgba(251,191,36,0.4);
+    background: rgba(255,255,255,0.03);
+  }
+
+  /* ---------- Oferta ---------- */
+  .oferta {
+    background: linear-gradient(160deg, var(--grad-3) 0%, var(--grad-2) 55%, var(--grad-1) 100%);
+    text-align: center;
+    margin: calc(-1 * var(--notch)) 0;
+    padding: calc(64px + var(--notch) + 20px) 0 calc(64px + var(--notch) + 20px);
+    clip-path: polygon(0 var(--notch), 100% 0, 100% calc(100% - var(--notch)), 0 100%);
+    overflow: hidden;
+  }
+  .blob-warm { width: 300px; height: 300px; top: -60px; right: -60px; background: radial-gradient(circle, rgba(251, 191, 36, 0.4), transparent 70%); }
+  .oferta-card {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 36px 24px;
+    max-width: 520px;
+    margin: 0 auto;
+    backdrop-filter: blur(4px);
+  }
+  .oferta-produto {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .oferta-preco-final {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.4rem, 10vw, 3.2rem);
+    font-weight: 800;
+    color: var(--gold-2);
+    margin-bottom: 4px;
+    text-shadow: 0 0 32px rgba(253, 224, 71, 0.35);
+  }
+  .oferta-preco-final small { font-size: 1rem; font-weight: 500; color: var(--text-muted); display: block; }
+  .oferta-parcelas { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; }
+  .oferta-bumps-nota {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+    max-width: 360px;
+    margin: 0 auto 24px;
+    padding: 12px 14px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .oferta-bumps-nota .icon { width: 16px; height: 16px; color: var(--gold-1); flex-shrink: 0; margin-top: 1px; }
+
+  .timer-box {
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(251,191,36,0.4);
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .timer-box:not([hidden]) { display: inline-flex; }
+  .timer-box .icon { color: var(--gold-1); }
+  .timer-box .timer-label { font-size: 0.8rem; color: var(--text-muted); display: block; text-align: left; }
+  .timer-box .timer-digits { font-size: 1.4rem; font-weight: 700; color: var(--gold-2); letter-spacing: 0.05em; }
+  .timer-expired {
+    font-size: 0.9rem;
+    color: var(--gold-2);
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 8px;
+  }
+  .timer-expired:not([hidden]) { display: inline-flex; }
+
+  .selo-seguro {
+    margin-top: 18px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .selo-seguro .icon { width: 16px; height: 16px; color: var(--gold-1); }
+
+  /* ---------- Carrossel ---------- */
+  .exemplos { background: #22092a; }
+  .carrossel {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .carrossel-viewport {
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 20px 44px rgba(0,0,0,0.35);
+  }
+  .carrossel-track {
+    display: flex;
+    transition: transform 0.35s ease;
+    touch-action: pan-y;
+  }
+  .carrossel-slide {
+    flex: 0 0 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 24px;
+  }
+  /* TROCAR: cada .carrossel-slide deve virar uma <img src="print-real-01.jpg" alt="Página X do checklist"> */
+  .carrossel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: 1px solid var(--card-border);
+    color: var(--text-light);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .carrossel-arrow .icon { width: 20px; height: 20px; }
+  .carrossel-arrow:hover { background: rgba(0,0,0,0.75); border-color: var(--card-border-hover); }
+  .carrossel-arrow:focus-visible { outline: 2px solid var(--gold-1); }
+  .carrossel-arrow.prev { left: -6px; }
+  .carrossel-arrow.next { right: -6px; }
+  .carrossel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .carrossel-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease, width 0.2s ease;
+  }
+  .carrossel-dot.active { background: var(--gold-1); width: 22px; border-radius: 6px; }
+
+  /* ---------- Garantia ---------- */
+  .garantia {
+    background: linear-gradient(180deg, #3a1240, #2b0f2e);
+    text-align: center;
+  }
+  .garantia-selo {
+    margin: 0 auto 20px;
+  }
+  .garantia h2 { margin-bottom: 12px; }
+  .garantia p { max-width: 480px; margin: 0 auto; color: var(--text-muted); }
+
+  /* ---------- FAQ ---------- */
+  .faq { background: #22092a; }
+  .faq-list { max-width: 680px; margin: 0 auto; }
+  .faq-item {
+    border-bottom: 1px solid var(--card-border);
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .faq-question:focus-visible { outline: 2px solid var(--gold-1); }
+  .faq-question .plus {
+    font-size: 1.4rem;
+    color: var(--gold-2);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-question .plus { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer-inner {
+    padding: 0 8px 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  /* ---------- Rodapé ---------- */
+  footer {
+    background: #150714;
+    padding: 40px 0 28px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+  footer .aviso-legal {
+    max-width: 560px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
+  }
+  footer .links {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  footer .links a { text-decoration: underline; color: var(--text-muted); }
+  footer .links a:hover { color: var(--gold-2); }
+  footer .copy { margin-top: 16px; opacity: 0.7; }
+
+  .aviso-inline {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    max-width: 460px;
+    margin: 18px auto 0;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    section { padding: 88px 0; }
+    .receber { padding-top: calc(88px + var(--notch) + 16px); }
+    .oferta { padding: calc(88px + var(--notch) + 20px) 0; }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== 1. HERO ========== -->
+<header class="hero">
+  <div class="blob blob-gold" aria-hidden="true"></div>
+  <div class="blob blob-pink" aria-hidden="true"></div>
+  <div class="container">
+    <span class="hero-badge">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3v18"/><path d="M5 4h11l-2 3 2 3H5"/></svg>
+      Enem 2026 — a reta final começou
+    </span>
+    <h1>Vai fazer o Enem e não sabe por onde começar?</h1>
+    <p class="subheadline">Isso resolve. Checklist completo, guia de redação e plano de 55 dias — tudo o que você precisa pra chegar organizado até novembro.</p>
+
+    <!-- TROCAR: substitua este div por <img> ou <video> real do produto/pessoa -->
+    <div class="hero-media" role="img" aria-label="Foto ilustrativa do material Aprovado Enem">
+      [ Espaço para foto ou vídeo de apresentação — trocar pelo arquivo real ]
+    </div>
+
+    <div class="btn-wrap">
+      <a href="#oferta" class="btn-cta" data-shine>Quero garantir o meu</a>
+    </div>
+  </div>
+</header>
+
+<!-- ========== 2. O QUE VOCÊ VAI RECEBER ========== -->
+<section class="receber">
+  <div class="container">
+    <h2 class="section-title">O que você vai receber</h2>
+    <p class="section-subtitle">Três PDFs objetivos, pensados pra funcionar juntos — sem enrolação, só o que você precisa estudar.</p>
+
+    <div class="receber-grid">
+      <div class="item-card reveal">
+        <span class="step-number" aria-hidden="true">01</span>
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+        </span>
+        <h3>Checklist Completo Enem 2026</h3>
+        <p>Mais de 430 tópicos organizados por área, cronograma de 8 semanas e resumão de véspera, pra você não perder tempo decidindo o que estudar.</p>
+      </div>
+      <div class="item-card reveal">
+        <span class="step-number" aria-hidden="true">02</span>
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 2.8 0l.2.2a2 2 0 0 1 0 2.8L8 19l-4 1z"/><path d="M14 6.5l3 3"/></svg>
+        </span>
+        <h3>Guia de Redação</h3>
+        <p>Técnicas de desenvolvimento, repertório sociocultural pronto pra usar e temas comentados — pra destravar sua nota 1000.</p>
+      </div>
+      <div class="item-card reveal">
+        <span class="step-number" aria-hidden="true">03</span>
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        </span>
+        <h3>Plano de Ataque 55 Dias</h3>
+        <p>Cronograma dia a dia até a prova, já integrado ao checklist e à redação. É só seguir.</p>
+      </div>
+    </div>
+
+    <p class="entrega-nota">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+      Entrega 100% digital — acesso liberado assim que o pagamento é confirmado.
+    </p>
+  </div>
+</section>
+
+<!-- ========== 3. POR QUE ESCOLHER NOSSO MATERIAL ========== -->
+<section class="beneficios">
+  <div class="container">
+    <h2 class="section-title">Por que escolher nosso material</h2>
+    <p class="section-subtitle">Pensado pra quem já perdeu tempo demais decidindo o que estudar e só quer abrir um plano e seguir.</p>
+
+    <div class="beneficios-grid">
+      <div class="beneficio-item reveal">
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+        </span>
+        <p><strong>Organizado a partir do que mais cai na prova</strong>, pra você não perder tempo decidindo o que estudar.</p>
+      </div>
+      <div class="beneficio-item reveal">
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        </span>
+        <p><strong>Alguém já organizou tudo por você.</strong> É só abrir o material e seguir o plano, sem gastar semanas pesquisando.</p>
+      </div>
+      <div class="beneficio-item reveal">
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg>
+        </span>
+        <p><strong>PDF leve, funciona em qualquer aparelho</strong> — celular, tablet ou computador, mesmo sem internet depois de baixado.</p>
+      </div>
+      <div class="beneficio-item reveal">
+        <span class="icon-circle icon-circle--md" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6 6-2z"/></svg>
+        </span>
+        <p><strong>Saber o que fazer a cada dia</strong> tira o peso de ficar se perguntando se você está estudando certo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. BÔNUS ========== -->
+<section class="bonus">
+  <div class="container">
+    <h2 class="section-title">Ofertas especiais no checkout</h2>
+    <p class="section-subtitle">Ao finalizar a compra do Checklist, você vai ver estas duas ofertas — não fazem parte do valor de R$9,99.</p>
+
+    <div class="bonus-grid">
+      <div class="bonus-card reveal">
+        <span class="bonus-tag">Oferta 1</span>
+        <h3>Guia de Redação</h3>
+        <p class="desc">Técnicas de desenvolvimento, repertório sociocultural e temas comentados.</p>
+        <p class="bonus-note">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>
+          Disponível como oferta exclusiva no checkout
+        </p>
+      </div>
+      <div class="bonus-card reveal">
+        <span class="bonus-tag">Oferta 2</span>
+        <h3>Plano de Ataque 55 Dias</h3>
+        <p class="desc">Cronograma dia a dia até a prova, integrado ao checklist e à redação.</p>
+        <p class="bonus-note">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>
+          Disponível como oferta exclusiva no checkout
+        </p>
+      </div>
+      <!-- TROCAR: definir o bônus 3 -->
+      <div class="bonus-card placeholder reveal">
+        <span class="bonus-tag">Oferta 3</span>
+        <h3>[A DEFINIR PELO CLIENTE]</h3>
+        <p class="desc">Espaço reservado para uma terceira oferta a ser definida.</p>
+        <p class="bonus-note">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>
+          Formato e disponibilidade a definir
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5. OFERTA ========== -->
+<section class="oferta" id="oferta">
+  <div class="blob blob-warm" aria-hidden="true"></div>
+  <div class="container">
+    <h2 class="section-title" style="color:#fff;">Garanta o seu Checklist agora</h2>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.85);">Checklist Completo Enem 2026 por um valor simbólico.</p>
+
+    <div class="oferta-card reveal">
+      <p class="oferta-produto">Checklist Completo Enem 2026</p>
+      <p class="oferta-preco-final">R$9,99<small>pagamento único</small></p>
+      <p class="oferta-parcelas">ou em até 3x no cartão</p>
+
+      <p class="oferta-bumps-nota">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        Guia de Redação e Plano de Ataque 55 Dias aparecem como ofertas exclusivas na próxima tela, por um valor à parte.
+      </p>
+
+      <div id="timer-container">
+        <div class="timer-box" id="timer-ativo">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 2h12M6 22h12M7 2c0 5 5 5.5 5 10s-5 5-5 10M17 2c0 5-5 5.5-5 10s5 5 5 10"/></svg>
+          <span>
+            <span class="timer-label">Oferta expira em</span>
+            <span class="timer-digits"><span id="timer-min">15</span>:<span id="timer-sec">00</span></span>
+          </span>
+        </div>
+        <p class="timer-expired" id="timer-expirado" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="11" width="15" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 7.4-2"/></svg>
+          Oferta reaberta — condição especial ainda disponível.
+        </p>
+      </div>
+
+      <div class="btn-wrap">
+        <!-- TROCAR "#" pelo link real do checkout Yampi -->
+        <a href="#" class="btn-cta" id="cta-oferta" data-shine>Quero garantir o meu Checklist</a>
+      </div>
+
+      <p class="selo-seguro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="11" width="15" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        Compra protegida, processada pela Yampi
+      </p>
+    </div>
+
+    <p class="aviso-inline">O resultado da prova depende da dedicação de cada pessoa. Não garantimos a sua aprovação na prova.</p>
+  </div>
+</section>
+
+<!-- ========== 6. EXEMPLOS DO MATERIAL ========== -->
+<section class="exemplos">
+  <div class="container">
+    <h2 class="section-title">Exemplos do material</h2>
+    <p class="section-subtitle">Uma prévia real de como cada material é organizado por dentro.</p>
+
+    <div class="carrossel reveal" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="Exemplos do material">
+      <button class="carrossel-arrow prev" id="carrossel-prev" aria-label="Slide anterior">
+        <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="carrossel-viewport">
+        <div class="carrossel-track" id="carrossel-track">
+          <!-- TROCAR: cada slide abaixo deve virar uma <img src="print-real-0X.jpg" alt="Descrição da página"> -->
+          <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="1 de 5">[ Print 1 — página do Checklist ]</div>
+          <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="2 de 5">[ Print 2 — cronograma de 8 semanas ]</div>
+          <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="3 de 5">[ Print 3 — página do Guia de Redação ]</div>
+          <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="4 de 5">[ Print 4 — Plano de Ataque 55 Dias ]</div>
+          <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="5 de 5">[ Print 5 — resumão de véspera ]</div>
+        </div>
+      </div>
+      <button class="carrossel-arrow next" id="carrossel-next" aria-label="Próximo slide">
+        <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="carrossel-dots" id="carrossel-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7. GARANTIA ========== -->
+<section class="garantia">
+  <div class="container">
+    <span class="icon-circle icon-circle--lg garantia-selo reveal" aria-hidden="true">
+      <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M12 2.5l7 3v6c0 5-3 8-7 9.5-4-1.5-7-4.5-7-9.5v-6l7-3z"/><path d="M9 12l2 2 4-4.5"/></svg>
+    </span>
+    <h2>Garantia incondicional de 7 dias</h2>
+    <p>Não gostou, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+  </div>
+</section>
+
+<!-- ========== 8. FAQ ========== -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title">Perguntas frequentes</h2>
+
+    <div class="faq-list" id="faq-list">
+      <div class="faq-item">
+        <h3>
+          <button class="faq-question" aria-expanded="false">
+            Como recebo o material após a compra?
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Assim que o pagamento é aprovado, você recebe o acesso por e-mail e já pode baixar direto na página de confirmação. É automático, sem espera.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <button class="faq-question" aria-expanded="false">
+            Funciona no celular?
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sim. O material é em PDF leve, então abre normalmente no celular, tablet ou computador, em qualquer leitor de PDF.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <button class="faq-question" aria-expanded="false">
+            E se eu não gostar?
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Você tem 7 dias de garantia incondicional. Se não gostar por qualquer motivo, é só pedir o reembolso e devolvemos 100% do valor, sem perguntas.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <button class="faq-question" aria-expanded="false">
+            O material é atualizado para 2026?
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sim, o conteúdo foi revisado e organizado especificamente pensando no Enem 2026, com os tópicos e o cronograma alinhados à data da prova.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <button class="faq-question" aria-expanded="false">
+            Vocês garantem minha aprovação?
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Não. O material te ajuda a organizar os estudos e usar melhor o tempo até a prova, mas o resultado da prova depende da dedicação de cada pessoa. Não garantimos a sua aprovação na prova.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 9. RODAPÉ ========== -->
+<footer>
+  <div class="container">
+    <p class="aviso-legal">O resultado da prova depende da dedicação de cada pessoa. Não garantimos a sua aprovação na prova.</p>
+    <div class="links">
+      <a href="termos.html">Termos de uso</a>
+      <a href="privacidade.html">Política de privacidade</a>
+    </div>
+    <p class="copy">© 2026 Aprovado Enem. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- FAQ Accordion ---------- */
+  var faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector(".faq-question");
+    var answer = item.querySelector(".faq-answer");
+
+    btn.addEventListener("click", function () {
+      var isOpen = item.classList.contains("open");
+
+      faqItems.forEach(function (other) {
+        other.classList.remove("open");
+        other.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        other.querySelector(".faq-answer").style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        item.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+
+  /* ---------- Carrossel ---------- */
+  var track = document.getElementById("carrossel-track");
+  var slides = Array.prototype.slice.call(track.children);
+  var dotsContainer = document.getElementById("carrossel-dots");
+  var prevBtn = document.getElementById("carrossel-prev");
+  var nextBtn = document.getElementById("carrossel-next");
+  var current = 0;
+
+  slides.forEach(function (_, i) {
+    var dot = document.createElement("button");
+    dot.className = "carrossel-dot" + (i === 0 ? " active" : "");
+    dot.setAttribute("aria-label", "Ir para slide " + (i + 1));
+    dot.addEventListener("click", function () { goTo(i); });
+    dotsContainer.appendChild(dot);
+  });
+  var dots = Array.prototype.slice.call(dotsContainer.children);
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = "translateX(-" + (current * 100) + "%)";
+    dots.forEach(function (d, i) { d.classList.toggle("active", i === current); });
+  }
+
+  prevBtn.addEventListener("click", function () { goTo(current - 1); });
+  nextBtn.addEventListener("click", function () { goTo(current + 1); });
+
+  /* Swipe/touch support */
+  var startX = 0;
+  var deltaX = 0;
+  var isTouching = false;
+
+  track.addEventListener("touchstart", function (e) {
+    isTouching = true;
+    startX = e.touches[0].clientX;
+    deltaX = 0;
+  }, { passive: true });
+
+  track.addEventListener("touchmove", function (e) {
+    if (!isTouching) return;
+    deltaX = e.touches[0].clientX - startX;
+  }, { passive: true });
+
+  track.addEventListener("touchend", function () {
+    if (!isTouching) return;
+    isTouching = false;
+    if (deltaX > 50) goTo(current - 1);
+    else if (deltaX < -50) goTo(current + 1);
+  });
+
+  /* Keyboard navigation */
+  document.getElementById("carrossel").addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") goTo(current - 1);
+    if (e.key === "ArrowRight") goTo(current + 1);
+  });
+
+  /* ---------- Timer regressivo (honesto, por sessão do visitante) ---------- */
+  var DURATION_MS = 15 * 60 * 1000;
+  var STORAGE_KEY = "aprovaEnemOfferDeadline";
+  var minEl = document.getElementById("timer-min");
+  var secEl = document.getElementById("timer-sec");
+  var ativoBox = document.getElementById("timer-ativo");
+  var expiradoBox = document.getElementById("timer-expirado");
+  var intervalId = null;
+  var memoryDeadline = null; // fallback caso sessionStorage esteja indisponível
+
+  function getDeadline() {
+    var stored = null;
+    try {
+      stored = sessionStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      stored = null;
+    }
+    var deadline = stored ? parseInt(stored, 10) : null;
+    if (!deadline || isNaN(deadline)) {
+      deadline = memoryDeadline || (Date.now() + DURATION_MS);
+      try {
+        sessionStorage.setItem(STORAGE_KEY, String(deadline));
+      } catch (e) {
+        memoryDeadline = deadline;
+      }
+    }
+    return deadline;
+  }
+
+  function render() {
+    var deadline = getDeadline();
+    var remaining = deadline - Date.now();
+
+    if (remaining <= 0) {
+      ativoBox.hidden = true;
+      expiradoBox.hidden = false;
+      clearInterval(intervalId);
+      return;
+    }
+
+    var totalSeconds = Math.floor(remaining / 1000);
+    var min = Math.floor(totalSeconds / 60);
+    var sec = totalSeconds % 60;
+    minEl.textContent = String(min).padStart(2, "0");
+    secEl.textContent = String(sec).padStart(2, "0");
+  }
+
+  render();
+  intervalId = setInterval(render, 1000);
+
+  /* ---------- Efeito shine nos botões CTA ---------- */
+  var shineButtons = document.querySelectorAll("[data-shine]");
+  shineButtons.forEach(function (btn) {
+    function trigger() {
+      btn.classList.remove("shine");
+      void btn.offsetWidth; // força reflow pra permitir retrigger da animação
+      btn.classList.add("shine");
+    }
+    btn.addEventListener("mouseenter", trigger);
+    btn.addEventListener("click", trigger);
+    btn.addEventListener("animationend", function () {
+      btn.classList.remove("shine");
+    });
+  });
+
+  /* ---------- Revelar elementos ao rolar ---------- */
+  var revealGroups = document.querySelectorAll(".receber-grid, .beneficios-grid, .bonus-grid");
+  revealGroups.forEach(function (group) {
+    Array.prototype.slice.call(group.children).forEach(function (child, i) {
+      child.style.transitionDelay = (i * 90) + "ms";
+    });
+  });
+
+  var revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in-view"); });
+  }
+})();
+</script>
+
+</body>
+</html>
