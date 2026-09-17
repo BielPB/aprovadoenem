@@ -100,14 +100,23 @@
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
     color: #2b0f2e;
-    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem;
-    padding: 17px 30px; border: none; border-radius: 999px; cursor: pointer;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 14px; white-space: nowrap;
+    padding: 15px 20px; border: none; border-radius: 999px; cursor: pointer;
     text-decoration: none;
     box-shadow: 0 8px 24px rgba(251, 191, 36, 0.35);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     width: 100%; max-width: 420px;
   }
   .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(251, 191, 36, 0.45); }
+  .btn-label-full { display: none; }
+  .btn-label-short { display: inline; }
+  @media (min-width: 480px) {
+    .btn-label-full { display: inline; }
+    .btn-label-short { display: none; }
+  }
+  @media (min-width: 768px) {
+    .btn-cta { font-size: 15px; padding: 16px 28px; }
+  }
   .btn-cta:active { transform: translateY(0); }
   .btn-cta:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
   .btn-cta::after {
@@ -274,7 +283,6 @@
     color: var(--gold-2); margin-bottom: 4px; text-shadow: 0 0 32px rgba(253, 224, 71, 0.35);
   }
   .oferta-preco-final small { font-size: 1rem; font-weight: 500; color: var(--text-muted); display: block; }
-  .oferta-taxa-nota { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 18px; }
   .oferta-facts { list-style: none; text-align: left; max-width: 360px; margin: 20px auto; display: flex; flex-direction: column; gap: 10px; }
   .oferta-facts li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.9); }
   .oferta-facts .icon { width: 17px; height: 17px; color: var(--gold-1); margin-top: 2px; flex-shrink: 0; }
@@ -391,14 +399,17 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
     <p class="subheadline">O Checklist para Aprovação Enem 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
 
     <div class="btn-wrap">
-      <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>Quero meu Checklist agora</a>
+      <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>
+        <span class="btn-label-full">Quero meu Checklist agora</span>
+        <span class="btn-label-short">Quero meu Checklist</span>
+      </a>
     </div>
 
     <a class="hero-image-link" href="https://pay.cakto.com.br/4vmbstr_1116116" aria-label="Comprar o Checklist para Aprovação Enem 2026">
       <img class="hero-image" src="assets/hero-square.jpg" alt="Capa do Checklist para Aprovação Enem 2026, com mais de 400 tópicos organizados por área" width="960" height="960" fetchpriority="high">
     </a>
 
-    <p class="hero-addons-note">Guia de Redação, Plano de 55 Dias e Planilha de Estudos são materiais opcionais, oferecidos à parte no checkout.</p>
+    <p class="hero-addons-note">Guia de Redação, Plano de Ataque 55 Dias e Planilha de Estudos são materiais opcionais, vendidos à parte e não estão incluídos neste preço.</p>
   </div>
 </header>
 
@@ -484,7 +495,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
 
     <p class="checkbox-note" style="margin-top:32px;">
       <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
-      Entrega 100% digital, em PDF. O acesso é liberado na área de membros da Cakto assim que o pagamento é aprovado, com o link também enviado por e-mail.
+      Entrega 100% digital, em PDF. O acesso é liberado na área de membros assim que o pagamento é aprovado, com o link também enviado por e-mail.
     </p>
   </div>
 </section>
@@ -501,8 +512,8 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
         <span class="icon-circle icon-circle--md" aria-hidden="true">
           <svg class="icon" viewBox="0 0 24 24" focusable="false"><use href="#icon-check"/></svg>
         </span>
-        <h3>Marque o que já sabe</h3>
-        <p>Passe o material inteiro marcando "Estudei" nos tópicos que você já domina. Isso mostra o tamanho real do que falta.</p>
+        <h3>Marque o que já estudou</h3>
+        <p>Passe o material inteiro marcando "Estudei" nos tópicos que já estudou. Isso mostra o tamanho real do que falta, mas só considere um tópico dominado depois de marcar também "Revisei" e "Fiz questões".</p>
       </div>
       <div class="feature-card reveal">
         <span class="step-number" aria-hidden="true">2</span>
@@ -529,38 +540,38 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
   <div class="blob blob-warm" aria-hidden="true"></div>
   <div class="container">
     <h2 class="section-title" style="color:#fff;">Garanta o seu Checklist</h2>
-    <p class="section-subtitle" style="color:rgba(255,255,255,0.85);">Acesso liberado assim que o pagamento é confirmado.</p>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.85);">Pagamento único, sem mensalidade.</p>
 
     <div class="oferta-card reveal">
       <p class="oferta-produto">Checklist para Aprovação Enem 2026</p>
-      <p class="oferta-preco-final">R$9,99<small>pagamento único</small></p>
-      <p class="oferta-taxa-nota">+ R$0,99 de taxa de serviço cobrada pela Cakto no Pix ou no cartão. Total de R$10,98 na tela de pagamento.</p>
+      <p class="oferta-preco-final">R$9,97<small>pagamento único</small></p>
 
       <ul class="oferta-facts">
         <li>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-check"/></svg>
-          Pagamento via Pix ou cartão de crédito, processado pela Cakto
+          PDF digital
         </li>
         <li>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-check"/></svg>
-          Acesso liberado na área de membros assim que o pagamento é aprovado
+          Mais de 400 tópicos por área
         </li>
         <li>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-check"/></svg>
-          PDF leve, abre no celular, tablet ou computador
+          Cronograma de 8 semanas
         </li>
         <li>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-check"/></svg>
-          Garantia de 7 dias corridos para pedir reembolso, sem precisar justificar
+          Conteúdos para a revisão final
         </li>
       </ul>
 
       <div class="btn-wrap">
-        <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" id="cta-oferta" data-shine>Quero garantir o meu Checklist</a>
+        <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" id="cta-oferta" data-shine>Quero meu Checklist</a>
       </div>
-      <p class="btn-note">Guia de Redação, Plano de 55 Dias e Planilha de Estudos aparecem como opção na tela de pagamento, por um valor à parte.</p>
+      <p class="btn-note">Acesso liberado assim que o pagamento é confirmado. Garantia de 7 dias corridos para pedir reembolso, sem precisar justificar.</p>
     </div>
 
+    <p class="aviso-inline">Guia de Redação, Plano de Ataque 55 Dias e Planilha de Estudos são materiais opcionais, vendidos à parte na tela de pagamento, e não estão incluídos neste preço.</p>
     <p class="aviso-inline">O resultado da prova depende da dedicação de cada pessoa. Não garantimos a sua aprovação na prova.</p>
   </div>
 </section>
@@ -608,7 +619,10 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
     </div>
 
     <div class="btn-wrap">
-      <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>Ver essas opções no checkout</a>
+      <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>
+        <span class="btn-label-full">Ver essas opções no checkout</span>
+        <span class="btn-label-short">Quero meu Checklist</span>
+      </a>
     </div>
   </div>
 </section>
@@ -620,7 +634,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
       <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M12 2.5l7 3v6c0 5-3 8-7 9.5-4-1.5-7-4.5-7-9.5v-6l7-3z"/><path d="M9 12l2 2 4-4.5"/></svg>
     </span>
     <h2>Garantia de 7 dias</h2>
-    <p>Você tem 7 dias corridos para desistir da compra e pedir reembolso integral, sem precisar justificar, conforme a política de compra e venda da Cakto.</p>
+    <p>Você tem 7 dias corridos para desistir da compra e pedir reembolso integral, sem precisar justificar, conforme a política de compra e venda vigente.</p>
   </div>
 </section>
 
@@ -650,7 +664,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
           </button>
         </h3>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Assim que o pagamento é aprovado pela Cakto, o acesso é liberado na área de membros, com o link também enviado para o e-mail usado na compra.</div>
+          <div class="faq-answer-inner">Assim que o pagamento é aprovado, o acesso é liberado na área de membros, com o link também enviado para o e-mail usado na compra.</div>
         </div>
       </div>
 
@@ -662,7 +676,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
           </button>
         </h3>
         <div class="faq-answer">
-          <div class="faq-answer-inner">4 áreas + Redação, mais de 400 tópicos com as marcações Estudei / Revisei / Fiz questões, cronograma de 8 semanas, resumão de véspera e um checklist do dia da prova. Guia de Redação, Plano de 55 Dias e Planilha de Estudos não estão incluídos. São opcionais, vendidos à parte.</div>
+          <div class="faq-answer-inner">4 áreas + Redação, mais de 400 tópicos com as marcações Estudei / Revisei / Fiz questões, cronograma de 8 semanas, resumão de véspera e um checklist do dia da prova. Guia de Redação, Plano de Ataque 55 Dias e Planilha de Estudos não estão incluídos. São opcionais, vendidos à parte.</div>
         </div>
       </div>
 
@@ -686,7 +700,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
           </button>
         </h3>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Você tem 7 dias corridos a partir da compra para pedir reembolso integral, sem precisar justificar, conforme a política de compra e venda da Cakto.</div>
+          <div class="faq-answer-inner">Você tem 7 dias corridos a partir da compra para pedir reembolso integral, sem precisar justificar, conforme a política de compra e venda vigente.</div>
         </div>
       </div>
 
