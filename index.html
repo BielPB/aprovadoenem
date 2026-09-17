@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checklist Completo ENEM 2026 | Aprovado Enem</title>
-<meta name="description" content="Checklist Completo ENEM 2026 em PDF: mais de 400 tópicos organizados por área, cronograma de 8 semanas e conteúdo para a revisão final.">
+<title>Checklist para Aprovação Enem 2026 | Aprovado Enem</title>
+<meta name="description" content="Checklist para Aprovação Enem 2026 em PDF: mais de 400 tópicos organizados por área, cronograma de 8 semanas e conteúdo para a revisão final.">
 <meta name="theme-color" content="#4c1d95">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Checklist Completo ENEM 2026">
+<meta property="og:title" content="Checklist para Aprovação Enem 2026">
 <meta property="og:description" content="Mais de 400 tópicos organizados por área, cronograma de 8 semanas e conteúdo para a revisão final.">
 <meta property="og:image" content="assets/hero-square.jpg">
 <meta property="og:locale" content="pt_BR">
@@ -141,22 +141,29 @@
   .hero .container { display: flex; flex-direction: column; align-items: center; gap: 16px; }
   .hero h1 { font-size: clamp(1.6rem, 5.5vw, 2.4rem); max-width: 700px; }
   .hero .subheadline { font-size: clamp(0.98rem, 2.6vw, 1.1rem); color: var(--text-muted); max-width: 560px; }
+  .hero-image-link {
+    display: block; width: 100%; max-width: 480px; margin-top: 18px;
+    border-radius: var(--radius);
+  }
+  .hero-image-link:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
   .hero-image {
-    width: 100%; max-width: 480px; height: auto; aspect-ratio: 1 / 1;
+    width: 100%; height: auto; aspect-ratio: 1 / 1;
     border-radius: var(--radius);
     border: 1px solid rgba(255,255,255,0.15);
     box-shadow: 0 20px 44px rgba(0,0,0,0.35);
-    margin-top: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+  .hero-image-link:hover .hero-image { transform: translateY(-2px); box-shadow: 0 24px 48px rgba(0,0,0,0.4); }
+  @media (prefers-reduced-motion: reduce) { .hero-image-link:hover .hero-image { transform: none; } }
   /* Notebooks e desktops com pouca altura de tela: encolhe a imagem quadrada
      do hero pra ela não estourar a viewport (telas tipo 1366x768, 1440x900). */
   @media (min-width: 768px) and (max-height: 900px) {
     .hero { padding-top: 28px; }
     .hero .container { gap: 10px; }
-    .hero-image { max-width: 260px; margin-top: 10px; }
+    .hero-image-link { max-width: 260px; margin-top: 10px; }
   }
   @media (min-width: 768px) and (max-height: 760px) {
-    .hero-image { max-width: 220px; }
+    .hero-image-link { max-width: 220px; }
   }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px;
@@ -267,6 +274,7 @@
     color: var(--gold-2); margin-bottom: 4px; text-shadow: 0 0 32px rgba(253, 224, 71, 0.35);
   }
   .oferta-preco-final small { font-size: 1rem; font-weight: 500; color: var(--text-muted); display: block; }
+  .oferta-taxa-nota { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 18px; }
   .oferta-facts { list-style: none; text-align: left; max-width: 360px; margin: 20px auto; display: flex; flex-direction: column; gap: 10px; }
   .oferta-facts li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.9); }
   .oferta-facts .icon { width: 17px; height: 17px; color: var(--gold-1); margin-top: 2px; flex-shrink: 0; }
@@ -340,8 +348,29 @@
     .whatsapp-float svg { width: 32px; height: 32px; }
   }
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1609312713920479');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
+
+<!-- Meta Pixel Code (noscript) -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code (noscript) -->
 
 <!-- Sprite de ícones reutilizados em múltiplos pontos da página -->
 <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;" focusable="false">
@@ -359,13 +388,15 @@
       Provas em 8 e 15 de novembro de 2026
     </span>
     <h1>Vai fazer o Enem e não sabe por onde começar?</h1>
-    <p class="subheadline">O Checklist Completo ENEM 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
+    <p class="subheadline">O Checklist para Aprovação Enem 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
 
     <div class="btn-wrap">
       <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>Quero meu Checklist agora</a>
     </div>
 
-    <img class="hero-image" src="assets/hero-square.jpg" alt="Capa do Checklist Completo ENEM 2026, com mais de 400 tópicos organizados por área" width="960" height="960" fetchpriority="high">
+    <a class="hero-image-link" href="https://pay.cakto.com.br/4vmbstr_1116116" aria-label="Comprar o Checklist para Aprovação Enem 2026">
+      <img class="hero-image" src="assets/hero-square.jpg" alt="Capa do Checklist para Aprovação Enem 2026, com mais de 400 tópicos organizados por área" width="960" height="960" fetchpriority="high">
+    </a>
 
     <p class="hero-addons-note">Guia de Redação, Plano de 55 Dias e Planilha de Estudos são materiais opcionais, oferecidos à parte no checkout.</p>
   </div>
@@ -384,7 +415,7 @@
       <div class="carrossel-viewport">
         <div class="carrossel-track" id="carrossel-track">
           <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="1 de 5">
-            <img src="assets/preview-01-capa.jpg" alt="Capa do Checklist Completo ENEM 2026" loading="lazy">
+            <img src="assets/preview-01-capa.jpg" alt="Capa do Checklist para Aprovação Enem 2026" loading="lazy">
           </div>
           <div class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="2 de 5">
             <img src="assets/preview-02-linguagens.jpg" alt="Prévia da página de Linguagens, com as marcações Estudei, Revisei e Fiz questões e alguns tópicos de exemplo" loading="lazy">
@@ -404,7 +435,7 @@
         <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
       </button>
       <div class="carrossel-dots" id="carrossel-dots"></div>
-      <p class="carrossel-caption" id="carrossel-caption">Capa do Checklist Completo ENEM 2026</p>
+      <p class="carrossel-caption" id="carrossel-caption">Capa do Checklist para Aprovação Enem 2026</p>
     </div>
 
     <p class="checkbox-note">
@@ -501,8 +532,9 @@
     <p class="section-subtitle" style="color:rgba(255,255,255,0.85);">Acesso liberado assim que o pagamento é confirmado.</p>
 
     <div class="oferta-card reveal">
-      <p class="oferta-produto">Checklist Completo ENEM 2026</p>
+      <p class="oferta-produto">Checklist para Aprovação Enem 2026</p>
       <p class="oferta-preco-final">R$9,99<small>pagamento único</small></p>
+      <p class="oferta-taxa-nota">+ R$0,99 de taxa de serviço cobrada pela Cakto no Pix ou no cartão. Total de R$10,98 na tela de pagamento.</p>
 
       <ul class="oferta-facts">
         <li>
@@ -519,7 +551,7 @@
         </li>
         <li>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-check"/></svg>
-          7 dias de garantia. Desista quando quiser, sem justificativa
+          Garantia de 7 dias corridos para pedir reembolso, sem precisar justificar
         </li>
       </ul>
 
@@ -606,7 +638,7 @@
           </button>
         </h3>
         <div class="faq-answer">
-          <div class="faq-answer-inner">O Checklist Completo ENEM 2026 é um arquivo em PDF, com mais de 400 tópicos organizados por área. Não é um curso nem uma aula gravada.</div>
+          <div class="faq-answer-inner">O Checklist para Aprovação Enem 2026 é um arquivo em PDF, com mais de 400 tópicos organizados por área. Não é um curso nem uma aula gravada.</div>
         </div>
       </div>
 
@@ -687,7 +719,7 @@
 
 <a
   class="whatsapp-float"
-  href="https://wa.me/5535954732539?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Checklist%20do%20Aprovado%20Enem"
+  href="https://wa.me/5535954732539?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Checklist%20para%20Aprova%C3%A7%C3%A3o%20Enem%202026"
   target="_blank"
   rel="noopener"
   aria-label="Falar no WhatsApp"
@@ -732,7 +764,7 @@
   var nextBtn = document.getElementById("carrossel-next");
   var captionEl = document.getElementById("carrossel-caption");
   var captions = [
-    "Capa do Checklist Completo ENEM 2026",
+    "Capa do Checklist para Aprovação Enem 2026",
     "Prévia de Linguagens, com as marcações Estudei, Revisei e Fiz questões",
     "Prévia do cronograma de 8 semanas",
     "Prévia do resumão de véspera",
