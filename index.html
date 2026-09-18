@@ -148,11 +148,24 @@
   .blob-gold { width: 260px; height: 260px; top: -70px; left: -80px; background: radial-gradient(circle, rgba(251, 191, 36, 0.55), transparent 70%); }
   .blob-pink { width: 320px; height: 320px; bottom: -100px; right: -100px; background: radial-gradient(circle, rgba(219, 39, 119, 0.5), transparent 70%); }
   .hero .container { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hero-copy { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; }
   .hero h1 { font-size: clamp(1.6rem, 5.5vw, 2.4rem); max-width: 700px; }
   .hero .subheadline { font-size: clamp(0.98rem, 2.6vw, 1.1rem); color: var(--text-muted); max-width: 560px; }
+  .hero-preco {
+    font-family: 'Poppins', sans-serif; font-weight: 800;
+    font-size: clamp(1.9rem, 5.5vw, 2.5rem); color: var(--gold-2);
+    text-shadow: 0 0 24px rgba(253, 224, 71, 0.3);
+  }
+  .hero-preco small { display: block; font-size: 0.95rem; font-weight: 500; color: var(--text-muted); margin-top: 2px; }
   .hero-image-link {
     display: block; width: 100%; max-width: 480px; margin-top: 18px;
     border-radius: var(--radius);
+  }
+  @media (min-width: 900px) {
+    .hero .container { flex-direction: row; align-items: center; justify-content: space-between; gap: 48px; text-align: left; }
+    .hero-copy { align-items: flex-start; text-align: left; flex: 1 1 480px; gap: 18px; }
+    .hero-copy .btn-wrap { justify-content: flex-start; width: 100%; margin-top: 4px; }
+    .hero-image-link { flex: 0 0 auto; max-width: 400px; margin-top: 0; }
   }
   .hero-image-link:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
   .hero-image {
@@ -386,25 +399,29 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
   <div class="blob blob-gold" aria-hidden="true"></div>
   <div class="blob blob-pink" aria-hidden="true"></div>
   <div class="container">
-    <span class="hero-badge">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
-      Provas em 8 e 15 de novembro de 2026
-    </span>
-    <h1>Vai fazer o Enem e não sabe por onde começar?</h1>
-    <p class="subheadline">O Checklist para Aprovação Enem 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
+    <div class="hero-copy">
+      <span class="hero-badge">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        Provas em 8 e 15 de novembro de 2026
+      </span>
+      <h1>Vai fazer o Enem e não sabe por onde começar?</h1>
+      <p class="subheadline">O Checklist para Aprovação Enem 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
 
-    <div class="btn-wrap">
-      <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>
-        <span class="btn-label-full">Quero meu Checklist agora</span>
-        <span class="btn-label-short">Quero meu Checklist</span>
-      </a>
+      <p class="hero-preco">R$9,99<small>pagamento único</small></p>
+
+      <div class="btn-wrap">
+        <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>
+          <span class="btn-label-full">Quero meu Checklist agora</span>
+          <span class="btn-label-short">Quero meu Checklist</span>
+        </a>
+      </div>
+
+      <p class="hero-addons-note">Guia de Redação, Plano de Ataque 55 Dias e Planilha de Estudos são materiais opcionais, vendidos à parte e não estão incluídos neste preço.</p>
     </div>
 
     <a class="hero-image-link" href="https://pay.cakto.com.br/4vmbstr_1116116" aria-label="Comprar o Checklist para Aprovação Enem 2026">
       <img class="hero-image" src="assets/hero-square.jpg" alt="Capa do Checklist para Aprovação Enem 2026, com mais de 400 tópicos organizados por área" width="960" height="960" fetchpriority="high">
     </a>
-
-    <p class="hero-addons-note">Guia de Redação, Plano de Ataque 55 Dias e Planilha de Estudos são materiais opcionais, vendidos à parte e não estão incluídos neste preço.</p>
   </div>
 </header>
 
