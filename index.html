@@ -151,6 +151,9 @@
   .hero-copy { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; }
   .hero h1 { font-size: clamp(1.6rem, 5.5vw, 2.4rem); max-width: 700px; }
   .hero .subheadline { font-size: clamp(0.98rem, 2.6vw, 1.1rem); color: var(--text-muted); max-width: 560px; }
+  .hero-preco-wrap { display: flex; flex-direction: column; gap: 2px; }
+  .hero-preco-anterior { font-size: 1rem; color: var(--text-muted); }
+  .hero-preco-anterior s { text-decoration-color: rgba(216, 180, 224, 0.7); }
   .hero-preco {
     font-family: 'Poppins', sans-serif; font-weight: 800;
     font-size: clamp(1.9rem, 5.5vw, 2.5rem); color: var(--gold-2);
@@ -291,6 +294,8 @@
     padding: 32px 24px; max-width: 480px; margin: 0 auto; backdrop-filter: blur(4px);
   }
   .oferta-produto { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 8px; }
+  .oferta-preco-anterior { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2px; }
+  .oferta-preco-anterior s { text-decoration-color: rgba(216, 180, 224, 0.7); }
   .oferta-preco-final {
     font-family: 'Poppins', sans-serif; font-size: clamp(2.3rem, 9vw, 3rem); font-weight: 800;
     color: var(--gold-2); margin-bottom: 4px; text-shadow: 0 0 32px rgba(253, 224, 71, 0.35);
@@ -407,7 +412,10 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
       <h1>Vai fazer o Enem e não sabe por onde começar?</h1>
       <p class="subheadline">O Checklist para Aprovação Enem 2026 reúne mais de 400 tópicos por área, um cronograma de 8 semanas e conteúdos para a revisão final. Veja o que já estudou, identifique o que falta e acompanhe seu progresso.</p>
 
-      <p class="hero-preco">R$9,99<small>pagamento único</small></p>
+      <div class="hero-preco-wrap">
+        <p class="hero-preco-anterior">De <s>R$37,90</s></p>
+        <p class="hero-preco">R$9,99<small>pagamento único</small></p>
+      </div>
 
       <div class="btn-wrap">
         <a href="https://pay.cakto.com.br/4vmbstr_1116116" class="btn-cta" data-shine>
@@ -556,6 +564,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
 
     <div class="oferta-card reveal">
       <p class="oferta-produto">Checklist para Aprovação Enem 2026</p>
+      <p class="oferta-preco-anterior">De <s>R$37,90</s></p>
       <p class="oferta-preco-final">R$9,99<small>pagamento único</small></p>
 
       <ul class="oferta-facts">
