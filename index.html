@@ -325,6 +325,22 @@
   .material-note { display: flex; align-items: flex-start; gap: 8px; font-size: 0.82rem; color: var(--gold-2); font-weight: 600; margin-top: auto; }
   .material-note .icon { width: 15px; height: 15px; color: var(--gold-1); margin-top: 2px; flex-shrink: 0; }
 
+  /* ---------- Depoimentos ---------- */
+  .depoimentos { background: #22092a; }
+  .depoimento-card {
+    background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius);
+    padding: 24px 20px; text-align: left; display: flex; flex-direction: column; gap: 16px;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .depoimento-card:hover {
+    transform: translateY(-6px); background: var(--card-bg-hover);
+    border-color: var(--card-border-hover); box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+  }
+  .depoimento-quote { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+  .depoimento-autor { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+  .depoimento-avatar { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--card-border); }
+  .depoimento-nome { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.92rem; color: var(--text-light); }
+
   /* ---------- FAQ ---------- */
   .faq { background: #22092a; }
   .faq-list { max-width: 680px; margin: 0 auto; }
@@ -648,7 +664,39 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- ========== 7. FAQ ========== -->
+<!-- ========== 7. DEPOIMENTOS ========== -->
+<section class="depoimentos">
+  <div class="container">
+    <h2 class="section-title">O que dizem quem já usou</h2>
+    <p class="section-subtitle">Depoimentos de quem comprou o Checklist.</p>
+
+    <div class="card-grid card-grid--3">
+      <div class="depoimento-card reveal">
+        <p class="depoimento-quote">"Eu estava estudando bastante, mas sempre ficava com aquela dúvida se estava esquecendo algum conteúdo importante. O checklist me ajudou justamente nisso. Agora consigo visualizar o que já estudei, o que preciso revisar e organizar melhor minha preparação para o Enem."</p>
+        <div class="depoimento-autor">
+          <img class="depoimento-avatar" src="assets/depoimento-lucas.jpg" alt="" loading="lazy" width="320" height="320">
+          <span class="depoimento-nome">Lucas Silva</span>
+        </div>
+      </div>
+      <div class="depoimento-card reveal">
+        <p class="depoimento-quote">"O checklist me ajudou a organizar as matérias e parar de estudar de forma tão aleatória. Junto com o guia de redação ficou ainda melhor, porque agora também tenho um direcionamento mais claro para treinar e estruturar meus textos. Achei o material simples de usar e muito útil."</p>
+        <div class="depoimento-autor">
+          <img class="depoimento-avatar" src="assets/depoimento-mariana.jpg" alt="" loading="lazy" width="320" height="320">
+          <span class="depoimento-nome">Mariana</span>
+        </div>
+      </div>
+      <div class="depoimento-card reveal">
+        <p class="depoimento-quote">"Eu estava bem perdida com tanta coisa para estudar e não sabia por onde começar. O checklist e a planilha me ajudaram a colocar tudo em ordem, enquanto o Plano de Ataque me deu um caminho para seguir até o Enem. O Guia de Redação também facilitou bastante meus treinos. Agora sinto que minha preparação está muito mais organizada."</p>
+        <div class="depoimento-autor">
+          <img class="depoimento-avatar" src="assets/depoimento-emanuela.jpg" alt="" loading="lazy" width="320" height="320">
+          <span class="depoimento-nome">Emanuela Gomes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 8. FAQ ========== -->
 <section class="faq">
   <div class="container">
     <h2 class="section-title">Perguntas frequentes</h2>
@@ -729,7 +777,7 @@ src="https://www.facebook.com/tr?id=1609312713920479&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- ========== 8. RODAPÉ ========== -->
+<!-- ========== 9. RODAPÉ ========== -->
 <footer>
   <div class="container">
     <p class="aviso-legal">O resultado da prova depende da dedicação de cada pessoa. Não garantimos a sua aprovação na prova.</p>
